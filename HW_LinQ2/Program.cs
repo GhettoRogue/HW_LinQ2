@@ -1,15 +1,15 @@
 ﻿var player = new List<Player>()
 {
-    new Player("Mike", 10, 50),
-    new Player("John", 20, 10),
-    new Player("Alex", 30, 150),
-    new Player("Todd", 40, 200),
-    new Player("Ethan", 50, 250),
-    new Player("Michael", 60, 300),
-    new Player("Noah", 70, 350),
-    new Player("Tobias", 80, 400),
-    new Player("Mark", 90, 450),
-    new Player("Fred", 100, 500)
+    new("Mike", 10, 50),
+    new("John", 20, 10),
+    new("Alex", 30, 150),
+    new("Todd", 40, 200),
+    new("Ethan", 50, 250),
+    new("Michael", 60, 300),
+    new("Noah", 70, 350),
+    new("Tobias", 80, 400),
+    new("Mark", 90, 450),
+    new("Fred", 100, 500)
 };
 
 var findTopLevel = (
@@ -31,19 +31,17 @@ return;
 
 void PrintByLevel()
 {
-    Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Yellow;
     foreach (var p in findTopLevel!)
     {
         Console.WriteLine($"Player name: {p.Name} - his level is {p.Level}.");
     }
+
     Console.ResetColor();
-    Console.WriteLine();
 }
 
 void PrintByPower()
 {
-    Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Cyan;
     foreach (var p in findTopPower!)
     {
@@ -52,7 +50,6 @@ void PrintByPower()
     }
 
     Console.ResetColor();
-    Console.WriteLine();
 }
 
 record class Player(string Name, int Level, int Power);
