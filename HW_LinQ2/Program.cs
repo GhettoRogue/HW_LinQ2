@@ -1,7 +1,7 @@
 ﻿var player = new List<Player>()
 {
     new("Mike", 10, 50),
-    new("John", 20, 10),
+    new("John", 20, 100),
     new("Alex", 30, 150),
     new("Todd", 40, 200),
     new("Ethan", 50, 250),
