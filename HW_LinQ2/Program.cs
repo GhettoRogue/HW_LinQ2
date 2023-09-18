@@ -29,6 +29,8 @@ PrintByLevel();
 
 return;
 
+#region PrintInfo
+
 void PrintByLevel()
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -52,4 +54,7 @@ void PrintByPower()
     Console.ResetColor();
 }
 
-record class Player(string Name, int Level, int Power);
+#endregion
+
+
+internal record Player(string Name, int Level, int Power);
